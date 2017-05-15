@@ -444,6 +444,12 @@
 }
 
 @media only screen and (max-width: 736px) {
+  .hide__sidebar_nav .star{
+    margin-top: 4px;
+  }
+  .hide__sidebar_nav .add{
+    margin-top: 0;
+  }
   .arrow-back{
     display: block;
   }
