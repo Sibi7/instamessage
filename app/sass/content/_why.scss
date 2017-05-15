@@ -1,0 +1,45 @@
+.why{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-color: #0a0a12;
+  h2{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+  }
+  p,span{
+    width: 90%;
+    display: inline-block;
+    text-align: center;
+    float: none;
+    margin: 25px auto 0;
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+
+  }
+  span{
+    color: #fffc00;
+    font-size: 24px;
+    background-image: url("../img/background_project1.jpg");
+    height: 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    background-position-y: -101px;
+    line-height: 209px;
+    margin-top: -46px;
+    z-index: -1;
+  }
+}

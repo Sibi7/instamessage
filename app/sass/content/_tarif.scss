@@ -1,0 +1,230 @@
+.tarif, .setting, .license, .payment{
+  background-color: #ecebfe;
+  height: 100vh;
+  float: left;
+  position: relative;
+  width: calc(100% - 265px);
+  text-align: center;
+  // display: none;
+}
+
+.tarif-panel,
+.setting-panel,
+.payment-panel{
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  padding: 41px 50px;
+  box-sizing: border-box;
+  box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.1);
+  span{
+    color: #9160ea;
+    font-family: $r;
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 9px;
+  }
+}
+
+.tarif__wrap,
+.setting__wrap,
+.payment__wrap{
+  width: 80%;
+  float: none;
+  margin: 50px auto 0;
+  display: inline-block;
+  form{
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+}
+
+.payment__wrap{
+  width: 90%;
+}
+.tarif__wrap_item{
+  width: 25%;
+  float: left;
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  -webkit-transform: scale(1,1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 550ms;
+  -moz-transform: scale(1,1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 550ms;
+  border-right: 1px solid rgba(127, 128, 130, 0.04);
+  box-sizing: border-box;
+  &:first-of-type{
+    border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    .title{
+      border-top-left-radius: 10px;
+      // border-top-right-radius: 10px;
+    }
+  }
+  &:last-of-type{
+    border-right: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    .title{
+      border-top-right-radius: 10px;
+    }
+  }
+  .tarif__content{
+    width: 100%;
+    float: left;
+    padding: 35px 35px ;
+    box-sizing: border-box;
+  }
+  .title{
+    font-family: $r;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: #7c63f3;
+  }
+  .price{
+    margin: 0 0 30px;
+    width: 100%;
+    float: left;
+    position: relative;
+    text-align: center;
+    color: #282828;
+    font-family: $r;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 63px;
+    i{
+      font-size: 20px;
+      position: relative;
+      top: -13px;
+    }
+  }
+  p{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #4f5362;
+    font-family: $r;
+    font-size: 14px;
+    line-height: 37px;
+    margin: 0;
+  }
+  a{
+    margin-top: 10px;
+    min-width: 141px;
+    height: 37px;
+    background-color: #7c63f3;
+    border-radius: 19px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 37px;
+    font-family: $r;
+    display: inline-block;
+  }
+  &:hover{
+    -webkit-transform: scale(1.03,1.03);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 550ms;
+  -moz-transform: scale(1.2,1.2);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 550ms;
+  border-radius: 10px;
+  box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.1);
+
+  .title{
+    background-image: linear-gradient(-77deg,#d656ce,#7c63f3);
+    background-clip: border-box;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  }
+}
+
+.payment__table{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: left;
+}
+
+.payment__table_title{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 7px 0;
+  box-sizing: border-box;
+  span{
+    float: left;
+    color: #000;
+    font-family: $r;
+    text-align: left;
+    font-weight: 700;
+  }
+}
+
+.payment__table_row{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 7px 0;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  span{
+    float: left;
+    color: #000;
+    font-family: $r;
+    text-align: left;
+  }
+  .status{
+    background-color: #9160ea;
+    padding: 4px 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    min-width: 20px;
+  }
+}
+.no{
+  width: 50px;
+  float: left;
+
+}
+.date-payment{
+  min-width: 200px;
+  float: left;
+}
+.name{
+  min-width: 200px;
+}
+.product{
+  min-width: 260px;
+}
+
+.price{
+  width: 120px;
+}
+
+.status{
+  min-width: 50px;
+}
+
+
+// #4c5678

@@ -1,0 +1,106 @@
+.project{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  padding: 0px 0 60px;
+  box-sizing: border-box;
+  background-color: #0a0a12;
+  h2{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+}
+
+.project__wrap{
+  width: 90%;
+  float: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.project__wrap_item{
+  width: 41%;
+  flex-basis: 41%;
+  float: left;
+  position: relative;
+  clear: both;
+  // &:last-of-type{
+  //   float: right;
+  // }
+  // &:nth-of-type(2){
+  //   float: none;
+  //   // margin: 0 auto;
+  // }
+
+  // h3{
+  //   width: 100%;
+  //   text-align: center;
+  //   position: relative;
+  //   margin: 0 0 35px;
+  //   color: #fff;
+  //   font-size: 16px;
+  //   font-weight: 400;
+  //   line-height: 15px;
+  //   span{
+  //     width: 100%;
+  //     display: inline-block;
+  //     float: left;
+  //     color: #fffc00;
+  //     font-size: 30px;
+  //     font-weight: 700;
+  //     line-height: 26px;
+  //     text-align: center;
+  //     letter-spacing: normal;
+  //   }
+  // }
+  span{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+    img{
+      object-fit: contain;
+      width: 216px;
+      height: 41px;
+    }
+  }
+  p{
+    width: 100%;
+    float: left;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+    text-align: justify;
+    min-height: 140px;
+  }
+  a{
+    display: inline-block;
+    margin: 0 auto 0;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    &:hover{
+      background-color: #fffc00;
+      border: 1px solid #fffc00;
+      color: #0a0a12
+    }
+  }
+}

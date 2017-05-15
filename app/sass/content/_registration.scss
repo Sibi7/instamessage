@@ -1,0 +1,203 @@
+.registration {
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  background-color: #29324f;
+  height: 100vh;
+  // padding: 100px 0;
+  box-sizing: border-box;
+  > .container {
+    height: 100vh;
+  }
+}
+
+.registration__wrap {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 648px;
+  width: 100%;
+  float: left;
+  position: relative;
+  background: url("../img/reg-fon.png") no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  box-shadow: 24.3px 15.8px 40px rgba(0, 0, 0, 0.62);
+  padding: 75px;
+  box-sizing: border-box;
+  h1 {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    font-family: $r;
+    color: #fff;
+    margin: 20px 0 0;
+  }
+}
+
+.registration__wraps {
+  float: none;
+  width: 840px;
+  margin: 40px auto 0;
+  position: relative;
+  display: inline-block;
+}
+
+.registration__wrap_item {
+  width: 50%;
+  float: left;
+  position: relative;
+  text-align: center;
+  padding-right: 25px;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  &:last-of-type {
+    padding-left: 25px;
+    padding-right: 0;
+    border-right: none;
+  }
+  &:first-of-type {
+    p {
+      position: relative;
+      top: 21px;
+    }
+  }
+  h4 {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 0 0 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: $r;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+  button {
+    outline: none;
+    background-image: linear-gradient(-77deg, #d656ce 0%, #7c63f3 100%);
+
+    box-shadow: 6.7px 4.4px 13px rgba(0, 0, 0, 0.29);
+    background-clip: border-box;
+    border: none;
+    cursor: pointer;
+    min-width: 360px;
+    // padding: 0 60px;
+    box-sizing: border-box;
+    height: 50px;
+    background-color: #1f5dea;
+    background-image: linear-gradient(-77deg, #d656ce 0%, #7c63f3 100%);
+    border-radius: 25px;
+    span {
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  .bg-color {
+    background-color: #1b2134;
+    background-image: none;
+    border: 1px solid #fff;
+  }
+}
+
+.registration__wrap_item_row {
+
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+  span {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 24px;
+  }
+  input {
+    height: 42px;
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 21px;
+    float: left;
+    padding-left: 50px;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: 400;
+    font-family: $r;
+    font-size: 15px;
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+  p {
+    margin: 0;
+    display: inline-block;
+    // float: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    float: left;
+    height: 40px;
+  }
+  a {
+    font-style: italic;
+    width: initial;
+    text-decoration: underline;
+    text-transform: none;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+  }
+
+}
+
+.registration__wrap_item_row-item {
+  width: 48.1%;
+  float: left;
+  position: relative;
+  margin-right: 15px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.user-icon {
+  background-image: url("../img/icons/user.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+
+.lock-icon {
+  width: 14px;
+  height: 17px;
+  background-image: url("../img/icons/lock.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+}
+
+.mail-icon {
+  width: 18px;
+  height: 12px;
+  background-image: url("../img/icons/mail.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin-top: 15px !important;
+
+}
