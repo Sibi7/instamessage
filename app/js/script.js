@@ -224,6 +224,12 @@ $(document).ready(function () {
 
     }
 
+    $(".smiles").click(function () {
+        $(".smiles-list").slideToggle();
+    });
+
+
+
 });
 
 $( "#progressbar" ).progressbar({

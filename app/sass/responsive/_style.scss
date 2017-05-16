@@ -444,6 +444,23 @@
 }
 
 @media only screen and (max-width: 736px) {
+  .license, .tarif, .setting {
+    height: 100%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+  .tarif{
+    min-height: 1000px;
+    &:after{
+      content: "";
+      background-color: #ecebfe;
+      height: 100%;
+      width: 100%;
+      float: left;
+      position: absolute;
+      left: 0;
+    }
+  }
   .hide__sidebar_nav .star{
     margin-top: 4px;
   }
