@@ -226,7 +226,14 @@ $(document).ready(function () {
 
     $(".smiles").click(function () {
         $(".smiles-list").slideToggle();
-        $(".smiles").addClass("smiles-active");
+        // $(".smiles").addClass("smiles-active");
+
+        if($(this).hasClass("smiles-active")){
+          $(".smiles").removeClass("smiles-active");
+        }
+        else {
+            $(".smiles").addClass("smiles-active");
+        }
 
 
     });
