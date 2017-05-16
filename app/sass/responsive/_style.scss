@@ -1,4 +1,13 @@
 @media only screen and (max-width: 1024px) {
+  .dialog__area_panel .files, .dialog__area_panel .smiles{
+    float: none;
+  }
+  .dialog__area_panel .smiles-list__wrap{
+    text-align: left!important;
+  }
+  .dialog__area_panel .smiles-list{
+    right: 5px;
+  }
   .payment__wraps{
     width: 100%;
     overflow: hidden;
@@ -444,6 +453,16 @@
 }
 
 @media only screen and (max-width: 736px) {
+  .dialog__area_panel .files, .dialog__area_panel .smiles{
+    float: none;
+  }
+  .dialog__area_panel .smiles-list{
+    right: 4px;
+    float: none;
+  }
+  .dialog__area_panel .smiles-list__wrap{
+    text-align: left!important;
+  }
   .license, .tarif, .setting {
     height: 100%;
     padding-bottom: 20px;

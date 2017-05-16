@@ -226,6 +226,9 @@ $(document).ready(function () {
 
     $(".smiles").click(function () {
         $(".smiles-list").slideToggle();
+        $(".smiles").addClass("smiles-active");
+
+
     });
 
 

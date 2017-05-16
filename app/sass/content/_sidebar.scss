@@ -780,6 +780,11 @@ aside {
       }
     }
   }
+  .smiles-active{
+    i{
+      color: #9036f6;
+    }
+  }
   .smiles-list {
     width: 280px;
     // height: 137px;
@@ -795,23 +800,24 @@ aside {
     height: 200px;
     overflow: hidden;
     overflow-y: scroll;
-    &:after{
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
-      border-bottom: 10px solid #fff;
-      position: absolute;
-      right: 10px;
-      bottom: -9px;
-      transform: rotate(180deg);
-    }
+
   }
   .smiles-list__wrap{
     width: 100%;
-    height: 1000px;
-
+    // height: 1000px;
+    float: left;
+    // &:after{
+    //   content: "";
+    //   width: 0;
+    //   height: 0;
+    //   border-left: 6px solid transparent;
+    //   border-right: 6px solid transparent;
+    //   border-bottom: 10px solid #fff;
+    //   position: absolute;
+    //   right: 10px;
+    //   bottom: -9px;
+    //   transform: rotate(180deg);
+    // }
   }
   button {
     position: relative;
@@ -832,18 +838,19 @@ aside {
   .smiles-list::-webkit-scrollbar-button {
     background-image:url('');
     background-repeat:no-repeat;
-    width:10px;
+    width:5px;
     height:0px
 }
 
   .smiles-list::-webkit-scrollbar-track {
-background-color:#ecedee
+background-color:#fff;
 }
 
   .smiles-list::-webkit-scrollbar-thumb {
 -webkit-border-radius: 10px;
-border-radius: 10px;
+border-radius: 5px;
 background-color:#a4a9bb;
+height: 20px;
 }
 
   .smiles-list::-webkit-scrollbar-thumb:hover{
@@ -853,12 +860,12 @@ background-color:#a4a9bb;
   .smiles-list::-webkit-resizer{
 background-image:url('');
 background-repeat:no-repeat;
-width:10px;
+width:5px;
 height:0px
 }
 
   .smiles-list::-webkit-scrollbar{
-width: 10px;
+width: 5px;
 }
 
 
