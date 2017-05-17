@@ -488,6 +488,12 @@
       a{
         border-radius: 21px;
       }
+      &:last-of-type{
+        a{
+          border-radius: 21px;
+        }
+
+      }
     }
   }
   .input__wrap{
