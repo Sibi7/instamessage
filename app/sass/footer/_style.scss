@@ -288,5 +288,37 @@
   }
   span.lock-icon {
     margin-left: 4px;
+    background-image: url("../img/icons/css_sprites.png");
+    background-position: -44px -10px;
+    width: 14px;
+    height: 17px;
+    background-size: initial;
   }
+  .error-password .lock-icon{
+      background-position: -10px -10px!important;
+      margin-left: 4px;
+      background-image: url("../img/icons/css_sprites.png");
+      width: 14px;
+      height: 17px;
+      background-size: initial;
+  }
+}
+
+.error-lock-icon{
+  background-position: -10px -10px!important;
+  margin-left: 4px;
+  background-image: url("../img/icons/css_sprites.png");
+  width: 14px;
+  height: 17px;
+  background-size: initial;
+}
+.error-password{
+  color: #ff0c0c!important;
+}
+.requirements{
+  width: 100%;
+  float: left;
+  color: #ff0c0c;
+  font-family: $r;
+  display: none;
 }
