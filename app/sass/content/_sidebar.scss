@@ -325,8 +325,41 @@ aside {
   display: none;
   position: relative;
   border-left: 1px solid rgba(135, 138, 162, 0.1);
+  overflow-y: scroll;
 }
 
+.hide__sidebar::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:3px;
+  height:0px
+}
+
+.hide__sidebar::-webkit-scrollbar-track {
+background-color:#29324f;
+}
+
+.hide__sidebar::-webkit-scrollbar-thumb {
+-webkit-border-radius: 10px;
+border-radius: 3px;
+background-color:rgba(135,138,162,.1);
+height: 20px;
+}
+
+.hide__sidebar::-webkit-scrollbar-thumb:hover{
+background-color:#a4a9bb;
+}
+
+.hide__sidebar::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:3px;
+height:0px
+}
+
+.hide__sidebar::-webkit-scrollbar{
+width: 3px;
+}
 .hide__sidebar_active {
   display: block;
 }
@@ -710,6 +743,55 @@ aside {
   }
 }
 
+.msg-pic{
+  float: left;
+  width: 100%;
+  padding-left: 60px;
+  background-color: transparent;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 10px;
+  position: relative;
+
+
+}
+.overlay-wrap{
+  background-color: rgba(99, 95, 95, 0.66);
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  cursor: pointer;
+}
+.pic-wrap{
+  width: 200px;
+  height: 100px;
+  float: left;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  img{
+    size: 100%;
+    object-fit: cover;
+  }
+  &:hover .overlay-wrap{
+    display: block;
+  }
+}
+
+.zoom-icon{
+  background-image: url("../img/icons/loupe.png");
+  size: 45px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 39%;
+  margin-top: 14%;
+  display: block;
+}
 .dialog__row_right {
   text-align: right;
   .thumb {
@@ -717,6 +799,16 @@ aside {
     margin-left: 20px;
     margin-right: 0;
     top: -13px;
+  }
+  .msg-pic{
+    padding-right: 60px;
+    margin-left: 0;
+    padding-left: 0;
+    float: right;
+
+  }
+  .pic-wrap, .overlay-wrap{
+    float: right;
   }
   .user-name, .time {
     float: none !important;

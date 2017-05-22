@@ -284,6 +284,17 @@ $(document).ready(function () {
           jQuery(".tab_modal__content_item").fadeOut(500), jQuery("#" + t).addClass('current').fadeIn(500);
 
       });
+      /*popup*/
+      $('.image-popup-vertical-fit').magnificPopup({
+         type: 'image',
+         closeOnContentClick: true,
+         mainClass: 'mfp-img-mobile',
+         image: {
+           verticalFit: true
+         }
+
+       });
+      /*popup*/
 
 });
 
