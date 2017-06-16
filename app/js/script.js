@@ -301,3 +301,11 @@ $(document).ready(function () {
 $( "#progressbar" ).progressbar({
     value: 37
   });
+
+
+  $(document).on('click', '.add', function () {
+    $('.new-dialog').show();
+  });
+  $(document).on('click', '.cancel-newdialog', function () {
+    $('.new-dialog').hide();
+  });
