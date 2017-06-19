@@ -1,4 +1,4 @@
-<aside>
+<!-- <aside> -->
     <div class="sidebar">
         <div class="sidebar__logo">
             <img src="img/logo-instamessage.png" alt="">
@@ -537,27 +537,24 @@
 
       </div>
       <div class="name-place">
+        <div class="name-place__user">
 
-        <div class="add-user__dialog" >a.avddev1 <span class="close-add-user"></span></div>
-        <div class="add-user__dialog" >a.avddev2 <span class="close-add-user"></span></div>
-        <div class="add-user__dialog" >a.avddev3 <span class="close-add-user"></span></div>
-        <div class="add-user__dialog" >a.avddev4 <span class="close-add-user"></span></div>
-        <div class="add-user__dialog" >a.avddev <span class="close-add-user"></span></div>
-        <div class="add-user__dialog" >a.avddev <span class="close-add-user"></span></div>
-        <input type="text" placeholder="Введите имя или фамилию">
+        </div>
+        <input type="text" placeholder="Введите никнейм" id="user-search">
+        <ul class="search_result"></ul>
       </div>
       <div class="new-dialog__wrap">
-        <div class="user__row">
+        <div class="user__row" >
           <div class="user__row_thumb">
               <img src="img/user.png" alt="">
               <span class="active-circle"></span>
           </div>
 
-          <span class="user-name">
+          <span class="user-name un_1" >
             egorka87
           </span>
-          <div class="user-check">
-            <input type="checkbox" class="checkbox" id="checkbox" />
+          <div class="user-check" data-user="1">
+            <input type="checkbox"  class="checkbox" id="checkbox" />
             <label for="checkbox"></label>
           </div>
         </div>
@@ -567,10 +564,10 @@
               <span class="active-circle"></span>
           </div>
 
-          <span class="user-name">
-            egorka87
+          <span class="user-name un_2">
+            egorka871
           </span>
-          <div class="user-check">
+          <div class="user-check" data-user="2">
             <input type="checkbox" class="checkbox" id="checkbox1" />
             <label for="checkbox1"></label>
           </div>
@@ -581,10 +578,10 @@
               <span class="active-circle"></span>
           </div>
 
-          <span class="user-name">
-            egorka87
+          <span class="user-name un_3">
+            egorka872
           </span>
-          <div class="user-check">
+          <div class="user-check" data-user="3">
             <input type="checkbox" class="checkbox" id="checkbox2" />
             <label for="checkbox2"></label>
           </div>
@@ -595,10 +592,10 @@
               <span class="active-circle"></span>
           </div>
 
-          <span class="user-name">
+          <span class="user-name un_4">
             egorka87
           </span>
-          <div class="user-check">
+          <div class="user-check" data-user="4">
             <input type="checkbox" class="checkbox" id="checkbox3" />
             <label for="checkbox3"></label>
           </div>
@@ -609,10 +606,10 @@
               <span class="active-circle"></span>
           </div>
 
-          <span class="user-name">
+          <span class="user-name un_5">
             egorka87
           </span>
-          <div class="user-check">
+          <div class="user-check" data-user="5">
             <input type="checkbox" class="checkbox" id="checkbox4" />
             <label for="checkbox4"></label>
           </div>
@@ -623,10 +620,10 @@
               <span class="active-circle"></span>
           </div>
 
-          <span class="user-name">
+          <span class="user-name un_6">
             egorka87
           </span>
-          <div class="user-check">
+          <div class="user-check" data-user="6">
             <input type="checkbox" class="checkbox" id="checkbox5" />
             <label for="checkbox5"></label>
           </div>
@@ -637,10 +634,10 @@
               <span class="active-circle"></span>
           </div>
 
-          <span class="user-name">
+          <span class="user-name un_7">
             egorka87
           </span>
-          <div class="user-check">
+          <div class="user-check" data-user="8">
             <input type="checkbox" class="checkbox" id="checkbox6" />
             <label for="checkbox6"></label>
           </div>
@@ -651,10 +648,10 @@
               <span class="active-circle"></span>
           </div>
 
-          <span class="user-name">
+          <span class="user-name un_8" >
             egorka87
           </span>
-          <div class="user-check">
+          <div class="user-check" data-user="8">
             <input type="checkbox" class="checkbox" id="checkbox7" />
             <label for="checkbox7"></label>
           </div>
@@ -750,15 +747,15 @@
             <a href="" class="close-icon"><img src="img/icons/cancel-music.png" alt=""></a>
             <div class="setting-list">
                 <div class="setting-list-1">
-                    <a href=""><span><i class="fa fa-plus" aria-hidden="true"></i></span>Добавить собеседников</a>
-                    <a href=""><span><i class="fa fa-paperclip" aria-hidden="true"></i></span>Показать вложения</a>
-                    <a href=""><span><i class="fa fa-search" aria-hidden="true"></i></span>Поиск по истории
+                    <a href="#"><span><i class="fa fa-plus" aria-hidden="true"></i></span>Добавить собеседников</a>
+                    <a href="#"><span><i class="fa fa-paperclip" aria-hidden="true"></i></span>Показать вложения</a>
+                    <a href="#"><span><i class="fa fa-search" aria-hidden="true"></i></span>Поиск по истории
                         сообщений</a>
                 </div>
                 <div class="setting-list-2">
-                    <a href=""><span><i class="fa fa-volume-off" aria-hidden="true"></i></span>Отключить уведомления</a>
-                    <a href=""><span><i class="fa fa-lock" aria-hidden="true"></i></span>Заблокировать пользователя</a>
-                    <a href=""><span><i class="fa fa-trash" aria-hidden="true"></i></span>Очистить историю сообщений</a>
+                    <a href="#"><span><i class="fa fa-volume-off" aria-hidden="true"></i></span>Отключить уведомления</a>
+                    <a href="#" class="block-user"><span><i class="fa fa-lock" aria-hidden="true"></i></span>Заблокировать пользователя</a>
+                    <a href="#" class="clear-dialog"><span><i class="fa fa-trash" aria-hidden="true"></i></span>Очистить историю сообщений</a>
                 </div>
             </div>
         </div>

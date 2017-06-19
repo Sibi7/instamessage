@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  // $(".user-check").click( function(event) {
+
     var windowWidth = $(window).width();
 
     /*tabs*/
@@ -313,6 +315,88 @@ $( "#progressbar" ).progressbar({
 
 
 $(document).on('click', '.close-add-user', function () {
-  // $(this).next('.add-user__dialog').remove();
    $(this).closest('.add-user__dialog').remove();
 });
+
+$('.more-msg').click(function(){
+  $.ajax({
+    url: '',
+    type: 'POST',
+    data: {
+
+    },
+    success: function (data) {
+      console.log(data);
+    },
+    error: function () {
+      console.log('error');
+    }
+  });
+});
+$('.clear-dialog').click(function(){
+
+  $.ajax({
+    url: '',
+    type: 'POST',
+    data: {
+
+    },
+    success: function (data) {
+      $('.dialog').remove();
+    },
+    error: function () {
+      console.log('error');
+    }
+  });
+});
+$('.block-user').click(function(){
+
+  $.ajax({
+    url: '',
+    type: 'POST',
+    data: {
+
+    },
+    success: function (data) {
+  
+    },
+    error: function () {
+      console.log('error');
+    }
+  });
+});
+
+$(document).on('click', '.user-check', function(e){
+  e.preventDefault();
+  $(this).find('input').attr('checked', true);
+
+      var un = $(this).attr('data-user');
+      var name = $('.un_' + un).text();
+      console.log(123);
+      var da = document.createElement('div');
+      da.classList.add('add-user__dialog');
+      da.innerHTML = name + '<span class="close-add-user"></span>';
+      $('.name-place__user').append(da);
+});
+
+
+$('#user-search').bind("change keyup input click", function() {
+
+    if(this.value.length >= 2){
+        $.ajax({
+            type: 'post',
+            // url: ,
+            data: {'referal':this.value},
+            response: 'text',
+            success: function(data){
+                $(".search_result").html(data).fadeIn();
+           }
+       })
+    }
+})
+
+$(".search_result").on("click", "li", function(){
+    s_user = $(this).text();
+    //$("#user-search").val(s_user).attr('disabled', 'disabled'); //деактивируем input, если нужно
+    $(".search_result").fadeOut();
+})
