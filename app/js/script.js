@@ -309,3 +309,10 @@ $( "#progressbar" ).progressbar({
   $(document).on('click', '.cancel-newdialog', function () {
     $('.new-dialog').hide();
   });
+
+
+
+$(document).on('click', '.close-add-user', function () {
+  // $(this).next('.add-user__dialog').remove();
+   $(this).closest('.add-user__dialog').remove();
+});
